@@ -10,6 +10,7 @@ Esta es la homepage informativa de Mentor.ia, construida con HTML, CSS y JavaScr
 
 ### Secciones Principales
 
+#### Homepage (index.html)
 1. **Hero Section** - Presentación impactante con gradientes animados y estadísticas
 2. **Funciones** - 6 tarjetas destacando las características principales de la plataforma
 3. **Áreas de Desarrollo** - Sistema de pestañas interactivo mostrando 6 áreas:
@@ -24,6 +25,21 @@ Esta es la homepage informativa de Mentor.ia, construida con HTML, CSS y JavaScr
 6. **CTA Section** - Llamada a la acción principal
 7. **FAQ** - Acordeón con preguntas frecuentes
 8. **Footer** - Enlaces y redes sociales
+
+#### Página de Servicios (pages/services.html)
+1. **Hero Section** - Presentación de servicios de IA
+2. **8 Servicios Detallados** - Cada uno con:
+   - 🏋️ Análisis de Ejercicios con IA
+   - 🍽️ Contador de Calorías Inteligente
+   - 🧘 Asistente de Meditación Personalizado
+   - 💰 Planificador Financiero con IA
+   - ⚡ Coach de Productividad AI
+   - 😴 Análisis de Sueño Inteligente
+   - 🗣️ Mentor de Idiomas con IA
+   - 📚 Asistente de Lectura Inteligente
+3. **Bloques de Servicio** - Con descripción, features, tecnología y visualización
+4. **CTA Section** - Llamada a la acción
+5. **Footer** - Enlaces y redes sociales
 
 ### Características de Diseño
 
@@ -44,9 +60,12 @@ Esta es la homepage informativa de Mentor.ia, construida con HTML, CSS y JavaScr
 
 ```
 mentoria/
-├── index.html          # Página principal
+├── index.html          # Página principal (homepage)
+├── pages/
+│   └── services.html  # Página de servicios de IA
 ├── CSS/
-│   └── index.css      # Estilos principales
+│   ├── index.css      # Estilos principales
+│   └── services.css   # Estilos específicos de servicios
 ├── JS/
 │   └── index.js       # JavaScript para interactividad
 └── README.md          # Este archivo
@@ -90,15 +109,30 @@ mentoria/
    npx http-server
    ```
 3. Navega a `http://localhost:8000`
+4. Para ver la página de servicios: `http://localhost:8000/pages/services.html`
+
+## 🎯 Servicios de IA Disponibles
+
+La página de servicios muestra 8 servicios principales impulsados por IA:
+
+1. **Análisis de Ejercicios** - Computer Vision para corregir tu postura
+2. **Contador de Calorías** - Reconocimiento de imágenes para análisis nutricional
+3. **Asistente de Meditación** - IA que se adapta a tu estado emocional
+4. **Planificador Financiero** - Análisis predictivo de gastos
+5. **Coach de Productividad** - Optimización inteligente de tiempo
+6. **Análisis de Sueño** - Monitoreo y mejora de la calidad del descanso
+7. **Mentor de Idiomas** - Práctica conversacional con corrección en tiempo real
+8. **Asistente de Lectura** - Resúmenes y mapas conceptuales automáticos
 
 ## ✨ Próximas Características (Fase 2)
 
-- Integración con IA para mentoría personalizada
+- Implementación real de los servicios de IA
 - Sistema de autenticación de usuarios
 - Dashboard de seguimiento de hábitos
 - Base de datos para almacenar progreso
 - Sistema de notificaciones
 - Generación de planes personalizados con IA
+- APIs de integración para cada servicio
 
 ## 📝 Notas de Desarrollo
 
