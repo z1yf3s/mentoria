@@ -84,11 +84,26 @@ body {
     align-items: center;
 }
 
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
 .logo-text {
     font-size: 28px;
     font-weight: 800;
     color: var(--text-primary);
     letter-spacing: -0.5px;
+}
+
+.page-indicator {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--text-muted);
+    padding-left: 12px;
+    border-left: 2px solid var(--border-color);
+    letter-spacing: 0.5px;
 }
 
 .logo-highlight {
@@ -939,6 +954,10 @@ section {
     
     .menu-toggle {
         display: flex;
+    }
+    
+    .page-indicator {
+        display: none;
     }
     
     .hero-title {
