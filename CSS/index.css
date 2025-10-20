@@ -245,6 +245,29 @@ body {
     overflow: hidden;
 }
 
+.hero-background::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 700px;
+    background: linear-gradient(to bottom, 
+        transparent 0%, 
+        rgba(15, 15, 30, 0.05) 15%,
+        rgba(15, 15, 30, 0.1) 25%,
+        rgba(15, 15, 30, 0.2) 35%,
+        rgba(15, 15, 30, 0.3) 45%,
+        rgba(15, 15, 30, 0.45) 55%,
+        rgba(15, 15, 30, 0.6) 65%,
+        rgba(15, 15, 30, 0.75) 75%,
+        rgba(15, 15, 30, 0.85) 85%,
+        rgba(15, 15, 30, 0.95) 95%,
+        var(--background-dark) 100%);
+    z-index: 1;
+    pointer-events: none;
+}
+
 .gradient-orb {
     position: absolute;
     border-radius: 50%;
